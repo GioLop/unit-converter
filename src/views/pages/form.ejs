@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+<nav>
+  <%- include('../partials/menu') %>
+</nav>
+<main>
+  <form action="<%= formHandler %>" method="<%= method %>">
+    <label for="fvalue">Enter the <%= type.toLowerCase() %> to convert</label>
+    <br/>
+    <input type="text" id="fvalue" name="fvalue">
+    <br/>
+    <label for="ffrom">Unit to convert from</label>
+    <br/>
+    <select id="ffrom" name="ffrom">
+      <% units.forEach((unit) => { %>
+        <option><%= unit %></option>
+      <% }); %>
+    </select>
+    <br/>
+    <label for="fto">Unit to convert to</label>
+    <br/>
+    <select type="text" id="fto" name="fto">
+      <% units.forEach((unit) => { %>
+        <option><%= unit %></option>
+      <% }); %>
+    </select>
+    <br/>
+    <input type="submit" value="Convert">
+  </form>
+</main>
+
+</body>
+</html>
