@@ -1,12 +1,7 @@
-const weightContext = {
-  type: 'Weight',
-  units: ['Milligram', 'Gram', 'Kilogram', 'Ounce', 'Pound'],
-  formHandler: '/weight',
-  method: 'post'
-};
+const { weightFormContext } = require("../../model/forms-context.model");
 
 const httpGetWeightHandler = (_, res) => {
-  res.render('pages/form', weightContext);
+  res.render('pages/form', weightFormContext);
 };
 
 const httpPostWeightHandler = (req, res) => {

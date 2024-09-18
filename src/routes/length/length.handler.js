@@ -1,12 +1,7 @@
-const lenghtContext = {
-  type: 'Length',
-  units: ['Millimeter', 'Centimeter', 'Meter', 'Kilometer', 'Inch', 'Foot', 'Yard', 'Mile'],
-  formHandler: '/length',
-  method: 'post'
-};
+const { lenghtFormContext } = require("../../model/forms-context.model");
 
 const httpGetLengthHandler = (_, res) => {
-  res.render('pages/form', lenghtContext);
+  res.render('pages/form', lenghtFormContext);
 };
 
 const httpPostLengthHandler = (req, res) => {

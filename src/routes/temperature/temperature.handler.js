@@ -1,12 +1,7 @@
-const temperatureContext = {
-  type: 'Temperature',
-  units: ['Celsius', 'Fahrenheit', 'Kelvin'],
-  formHandler: '/temperature',
-  method: 'post'
-};
+const { temperatureFormContext } = require("../../model/forms-context.model");
 
 const httpTemperatureGetHandler = (_, res) => {
-  res.render('pages/form', temperatureContext);
+  res.render('pages/form', temperatureFormContext);
 };
 
 const httpTemperaturePostHandler = (req, res) => {
