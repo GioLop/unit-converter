@@ -1,0 +1,16 @@
+{
+  "name": "unit-converter",
+  "version": "1.0.0",
+  "description": "A simple web app that can convert between different units of measurement. It can convert units of length, weight, volume, area, temperature, and more.",
+  "main": "/src/server.js",
+  "scripts": {
+    "dev": "node --watch ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  }
+}
