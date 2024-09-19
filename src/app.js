@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const appRouter = require('./routes/app.router');
+const errorHandler = require('./middlewares/errorHandler.middleware');
 
 const app = express();
 
@@ -11,5 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', appRouter);
+
+app.use(errorHandler)
 
 module.exports = app;

@@ -20,16 +20,16 @@
     <label for="ffrom">Unit to convert from</label>
     <br/>
     <select id="ffrom" name="ffrom">
-      <% units.forEach((unit) => { %>
-        <option><%= unit %></option>
+      <% units.forEach(({ name, abbreviation }) => { %>
+        <option value="<%= abbreviation %>"><%= name %></option>
       <% }); %>
     </select>
     <br/>
     <label for="fto">Unit to convert to</label>
     <br/>
-    <select type="text" id="fto" name="fto">
-      <% units.forEach((unit) => { %>
-        <option><%= unit %></option>
+    <select id="fto" name="fto">
+      <% units.forEach(({ name, abbreviation }) => { %>
+        <option value="<%= abbreviation %>"><%= name %></option>
       <% }); %>
     </select>
     <br/>
