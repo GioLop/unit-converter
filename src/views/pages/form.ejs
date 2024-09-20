@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+  <%- include('../partials/head'); %>
 </head>
 <body class="container">
 
-<header>
-  <%- include('../partials/header'); %>
-</header>
-<nav>
-  <%- include('../partials/menu') %>
-</nav>
-<main>
-  <form action="<%= formHandler %>" method="<%= method %>">
-    <label for="fvalue">Enter the <%= type.toLowerCase() %> to convert</label>
-    <br/>
-    <input type="text" id="fvalue" name="fvalue">
-    <br/>
-    <label for="ffrom">Unit to convert from</label>
-    <br/>
-    <select id="ffrom" name="ffrom">
-      <% units.forEach(({ name, abbreviation }) => { %>
-        <option value="<%= abbreviation %>"><%= name %></option>
-      <% }); %>
-    </select>
-    <br/>
-    <label for="fto">Unit to convert to</label>
-    <br/>
-    <select id="fto" name="fto">
-      <% units.forEach(({ name, abbreviation }) => { %>
-        <option value="<%= abbreviation %>"><%= name %></option>
-      <% }); %>
-    </select>
-    <br/>
-    <input type="submit" value="Convert">
-  </form>
-</main>
-
+<div class="wrapper">
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
+  <nav>
+    <%- include('../partials/menu') %>
+  </nav>
+  <main>
+    <form action="<%= formHandler %>" 
+          method="<%= method %>" 
+          class="form">
+      <div class="form-item">
+        <label for="fvalue" class="form-label">Enter the <%= type.toLowerCase() %> to convert</label>
+        <input type="text" id="fvalue" name="fvalue" class="form-input">
+      </div>
+      <div  class="form-item">
+        <label for="ffrom" class="form-label">Unit to convert from</label>
+        <select id="ffrom" name="ffrom" class="form-select">
+          <% units.forEach(({ name, abbreviation }) => { %>
+            <option value="<%= abbreviation %>"><%= name %></option>
+          <% }); %>
+        </select>
+      </div>   
+      <div class="form-item">
+        <label for="fto" class="form-label">Unit to convert to</label>
+        <select id="fto" name="fto" class="form-select">
+          <% units.forEach(({ name, abbreviation }) => { %>
+            <option value="<%= abbreviation %>"><%= name %></option>
+          <% }); %>
+        </select>
+      </div>
+      
+      <input type="submit" value="Convert" class="form-button">
+    </form>
+  </main>
+</div>
 </body>
 </html>

@@ -23,6 +23,7 @@ const httpTemperaturePostHandler = (req, res) => {
   });
 
   res.render('pages/result', {
+    type: 'Temperature',
     fromValue: fvalue,
     fromUnit: ffrom,
     toValue,

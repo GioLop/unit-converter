@@ -11,7 +11,7 @@ const lenghtFormContext = {
     { name: 'Mile', abbreviation: 'mi' }
   ],
   formHandler: '/length',
-  method: 'post'
+  method: 'post',
 };
 
 const temperatureFormContext = {

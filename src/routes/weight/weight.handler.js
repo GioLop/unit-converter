@@ -21,6 +21,7 @@ const httpPostWeightHandler = (req, res) => {
   });
 
   res.render('pages/result', {
+    type: 'Weight',
     fromValue: fvalue,
     fromUnit: ffrom,
     toValue,

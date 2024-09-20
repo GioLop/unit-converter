@@ -21,6 +21,7 @@ const httpPostLengthHandler = (req, res) => {
   });
 
   res.render('pages/result', {
+    type: 'Length',
     fromValue: fvalue,
     fromUnit: ffrom,
     toValue,

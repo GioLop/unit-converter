@@ -1,5 +1,11 @@
-<ul>
-  <li><a href="/">Length</a></li>
-  <li><a href="/weight">Weight</a></li>
-  <li><a href="/temperature">Temperature</a></li>
+<ul class="menu">
+  <li class="menu_item">
+    <a class="menu_link <%= type === 'Length' && 'menu_link-active' %>" href="/">Length</a>
+  </li>
+  <li class="menu_item">
+    <a class="menu_link <%= type === 'Weight' && 'menu_link-active' %>" href="/weight">Weight</a>
+  </li>
+  <li class="menu_item">
+    <a class="menu_link <%= type === 'Temperature' && 'menu_link-active' %>" href="/temperature">Temperature</a>
+  </li>
 </ul>
