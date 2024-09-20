@@ -3,21 +3,21 @@ class BaseLenghtConverter {
     this.value = Number(value);
   }
 
-  toMillimeter() { this.toCentimeter() * 10 }
+  toMillimeter() { this.toCentimeter() * 10 };
 
-  toCentimeter() { return this.toMillimeter() / 10; }
+  toCentimeter() { return this.toMillimeter() / 10 };
 
-  toMeter() { return this.toCentimeter() / 100; }
+  toMeter() { return this.toCentimeter() / 100 };
 
-  toKilometer() { return this.toMeter() / 1000; }
+  toKilometer() { return this.toMeter() / 1000 };
 
-  toInch() { return this.toCentimeter() / 2.54; }
+  toInch() { return this.toCentimeter() / 2.54 };
 
-  toFoot() { return this.toInch() / 12; }
+  toFoot() { return this.toInch() / 12 };
 
-  toYard() { return this.toFoot() / 3; }
+  toYard() { return this.toFoot() / 3 };
 
-  toMile() { return this.toYard() / 1760; }
+  toMile() { return this.toYard() / 1760 };
 };
 
 class MillimeterConverter extends BaseLenghtConverter {
@@ -25,7 +25,7 @@ class MillimeterConverter extends BaseLenghtConverter {
     super(Number(value));
   };
 
-  toMillimeter() { return this.value; }
+  toMillimeter() { return this.value };
 };
 
 class CentimeterConverter extends BaseLenghtConverter {
@@ -41,9 +41,9 @@ class MeterConverter extends BaseLenghtConverter {
     super(value);
   }
 
-  toCentimeter() { return this.value * 100 }
+  toMeter() { return this.value };
 
-  toMeter() { return this.value }
+  toCentimeter() { return this.toMeter() * 100 };
 };
 
 class KilometerConverter extends BaseLenghtConverter {
@@ -51,9 +51,9 @@ class KilometerConverter extends BaseLenghtConverter {
     super(value);
   }
 
-  toMillimeter() { return this.value * 1000000; }
+  toKilometer() { return this.value };
 
-  toKilometer() { return this.value }
+  toMillimeter() { return this.toKilometer() * 1000000 };
 };
 
 class InchConverter extends BaseLenghtConverter {
@@ -61,9 +61,9 @@ class InchConverter extends BaseLenghtConverter {
     super(value);
   }
 
-  toMillimeter() { return this.value * 25.4; }
+  toMillimeter() { return this.value * 25.4 };
 
-  toInch() { return this.value; }
+  toInch() { return this.value };
 };
 
 class FootConverter extends BaseLenghtConverter {
@@ -71,9 +71,9 @@ class FootConverter extends BaseLenghtConverter {
     super(value);
   }
 
-  toMillimeter() { return this.value * 304.8; }
+  toMillimeter() { return this.value * 304.8 };
 
-  toFoot() { return this.value; }
+  toFoot() { return this.value };
 };
 
 class YardConverter extends BaseLenghtConverter {
@@ -81,9 +81,9 @@ class YardConverter extends BaseLenghtConverter {
     super(value);
   }
 
-  toMillimeter() { return this.value * 914.4; }
+  toMillimeter() { return this.value * 914.4 };
 
-  toYard() { return this.value; }
+  toYard() { return this.value };
 };
 
 class MileConverter extends BaseLenghtConverter {
@@ -91,7 +91,7 @@ class MileConverter extends BaseLenghtConverter {
     super(value);
   }
 
-  toMillimeter() { return this.value * 1609000; }
+  toMillimeter() { return this.value * 1609000 };
 };
 
 module.exports = {

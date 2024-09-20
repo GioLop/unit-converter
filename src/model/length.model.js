@@ -20,7 +20,7 @@ const transformMap = {
   mi: 'toMile'
 };
 
-const ClassMap = {
+const classMap = {
   mm: MillimeterConverter,
   cm: CentimeterConverter,
   m: MeterConverter,
@@ -31,9 +31,8 @@ const ClassMap = {
   mi: MileConverter
 };
 
-const getLengthConversion = ({ fromValue, fromUnit, toUnit }) => {
-  const converter = new ClassMap[fromUnit](fromValue);
-  return converter[transformMap[toUnit]]();
-};
 
-module.exports = getLengthConversion;
+module.exports = {
+  transformMap,
+  classMap,
+};
