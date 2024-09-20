@@ -7,12 +7,14 @@ const errorHandler = require('./middlewares/errorHandler.middleware');
 const app = express();
 
 app.set('view engine', 'ejs');
+// eslint-disable-next-line no-undef
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use('/', appRouter);
 
-app.use(errorHandler)
+app.use(errorHandler);
 
 module.exports = app;

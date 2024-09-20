@@ -4,7 +4,9 @@
   "description": "A simple web app that can convert between different units of measurement. It can convert units of length, weight, volume, area, temperature, and more.",
   "main": "/src/server.js",
   "scripts": {
-    "dev": "node --watch ./src/server.js"
+    "dev": "node --watch ./src/server.js",
+    "lint": "eslint",
+    "lint;fix": "eslint --fix"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +15,10 @@
     "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "eslint": "^9.11.0",
+    "globals": "^15.9.0"
   }
 }
