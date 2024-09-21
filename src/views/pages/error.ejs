@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <%- include('../partials/header'); %>
+    </header>
+    <main>
+      <div class="error">
+        <h2 class="error-title">Something went wrong!</h2>
+        <p class="error-message"><%= message %></p>
+      </div>
+      <a href="/<%= from %>" class="try-again-button">Try again</a>
+    </main>
+  </div>
+</body>
+</html>

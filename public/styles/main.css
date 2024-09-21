@@ -79,7 +79,7 @@ body {
 }
 
 .form-item {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-label {
@@ -90,13 +90,13 @@ body {
 
 .form-input {
   border: solid 1px #737373;
-  font-size: .75rem;
+  font-size: .8rem;
   padding: 10px;
   width: 100%;
 }
 
 .form-select {
-  font-size: .75rem;
+  font-size: .8rem;
   padding: 10px;
   width: 100%;
 }
@@ -106,7 +106,58 @@ body {
   background-color: #004AAD;
   border-style: none;
   font-family: 'Roboto-Bold';
-  font-size: .75rem;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  padding: 15px;
+  width: 100%;
+}
+
+.result-message {
+  color: #000;
+}
+
+.result-calculation {
+  align-items: center;
+  border: solid 1px #737373;
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.result-text {
+  color: #000;
+  font-family: 'Roboto-Bold';
+  font-size: 1.5rem;
+}
+
+.error {
+  background-color: #FFE8E8;
+  padding: 20px;
+  margin: 20px 0  ;
+}
+
+.error-title {
+  color: #000;
+  font-family: 'Roboto-Bold';
+  font-size: .85rem;
+  margin: 0 0 .5rem 0;
+}
+
+.error-message {
+  color: #000;
+  font-size: .9rem;
+  margin: 0;
+}
+
+.try-again-button {
+  color: #fff;
+  background-color: #D32525;
+  display: block;
+  font-family: 'Roboto-Bold';
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .5px;
   padding: 15px;
   width: 100%;
 }

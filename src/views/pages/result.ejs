@@ -12,8 +12,13 @@
       <%- include('../partials/menu') %>
     </nav>
     <main>
-      <p>Result of your calculation:</p>
-      <p><%= fromValue %><%= fromUnit %> = <%= toValue %><%= toUnit %></p>
+      <div class="result-message">
+        <p>This is the result of your calculation:</p>
+      </div>
+      <div class="result-calculation">
+        <p class="result-text"><%= fromValue %><%= fromUnit %> = <%= toValue %><%= toUnit %></p>
+      </div>
+      <button class="form-button">Reset</button>
     </main>
   </div>
 </body>

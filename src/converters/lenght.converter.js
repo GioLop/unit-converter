@@ -3,7 +3,7 @@ class BaseLenghtConverter {
     this.value = Number(value);
   }
 
-  toMillimeter() { this.toCentimeter() * 10 };
+  toMillimeter() { return this.toCentimeter() * 10 };
 
   toCentimeter() { return this.toMillimeter() / 10 };
 

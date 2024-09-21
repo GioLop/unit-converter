@@ -7,7 +7,7 @@ const errorHandler = require('./middlewares/errorHandler.middleware');
 const app = express();
 
 // eslint-disable-next-line no-undef
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, '..','public')));
 
 app.set('view engine', 'ejs');
 // eslint-disable-next-line no-undef
