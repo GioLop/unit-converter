@@ -13,7 +13,7 @@ const httpTemperatureGetHandler = (_, res) => {
 
 const httpTemperaturePostHandler = (req, res) => {
   const { body: { fvalue, ffrom, fto } } = req;
-  const { handler } = temperatureFormContext
+  const { handler } = temperatureFormContext;
 
   const toValue = getConversion({
     fromValue: fvalue,
