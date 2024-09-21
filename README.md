@@ -43,4 +43,7 @@ npm start
 http://localhost:8000/
 ```
 
-Now you can use it.
+Now you can use it:
+
+<img width="737" alt="Screenshot 2024-09-20 at 11 05 23 PM" src="https://github.com/user-attachments/assets/6de9f8ac-b317-4b2a-8a89-eb3e614f5b2b">
+
