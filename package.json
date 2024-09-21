@@ -7,7 +7,7 @@
     "start": "node ./src/server.js",
     "dev": "node --watch ./src/server.js",
     "lint": "eslint",
-    "lint;fix": "eslint --fix"
+    "lint:fix": "eslint --fix"
   },
   "keywords": [],
   "author": "",
