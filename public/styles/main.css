@@ -31,6 +31,7 @@ body {
 
 .wrapper {
   background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 70px 60px;
   width: 420px;
 }
@@ -103,10 +104,14 @@ body {
 
 .form-button {
   color: #fff;
+  cursor: pointer;
   background-color: #004AAD;
   border-style: none;
+  display: block;
   font-family: 'Roboto-Bold';
   font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
   letter-spacing: .5px;
   padding: 15px;
   width: 100%;

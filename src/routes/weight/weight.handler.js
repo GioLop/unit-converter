@@ -11,7 +11,8 @@ const httpGetWeightHandler = (_, res) => {
 
 const httpPostWeightHandler = (req, res) => {
   const { body: { fvalue, ffrom, fto } } = req;
-  
+  const { handler } = weightFormContext;
+
   const toValue = getConversion({
     fromValue: fvalue,
     fromUnit: ffrom,
@@ -25,7 +26,8 @@ const httpPostWeightHandler = (req, res) => {
     fromValue: fvalue,
     fromUnit: ffrom,
     toValue,
-    toUnit: fto
+    toUnit: fto,
+    handler
   });
 };
 
